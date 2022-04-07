@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: bluetic321/my-app:{Jenkins build number}
+          #image: bluetic321/my-app:{Jenkins build number}
+          image: arisu1000/simple-container-app:latest
           ports:
             - containerPort: 8080
 
