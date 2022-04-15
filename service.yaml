@@ -4,6 +4,9 @@ metadata:
   name: cicd-test
   labels:
     app: cicd-test
+  annotations:
+    argocd.argoproj.io/sync-options: Validate=false
+
 spec:
   type: ClusterIP
   selector:

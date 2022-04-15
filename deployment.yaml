@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cicd-test
+  annotations:
+    argocd.argoproj.io/sync-options: Validate=false 
 spec:
   selector:
     matchLabels:
