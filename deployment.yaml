@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cicd-test-container
-          image: bluetic321/cicd-test:53
+          image: bluetic321/cicd-test:54
           ports:
             - containerPort: 8080
 
