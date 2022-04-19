@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cicd-test
+  name: cicd-web
   annotations:
     argocd.argoproj.io/sync-options: Validate=false 
 spec:
   selector:
     matchLabels:
-      app: cicd-test
+      app: cicd-web
   replicas: 1
   template:
     metadata:
       labels:
-        app: cicd-test
+        app: cicd-web
     spec:
       containers:
-        - name: cicd-test-container
-          image: bluetic321/cicd-test:52
+        - name: cicd-web-container
+          image: bluetic321/cicd-web:52
           ports:
             - containerPort: 8080
 
