@@ -8,7 +8,7 @@ metadata:
     argocd.argoproj.io/sync-options: Validate=false
 
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: cicd-web
   ports:
