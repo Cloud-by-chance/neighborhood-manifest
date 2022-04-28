@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cicd-web-container
-          image: bluetic321/cicd-back:29
+          image: bluetic321/cicd-back:30
           ports:
             - containerPort: 80
           resources:
