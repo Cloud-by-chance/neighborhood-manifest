@@ -18,7 +18,7 @@ spec:
         - name: cicd-web-container
           image: bluetic321/cicd-back:19
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           resources:
             requests:
               cpu: "250m"
